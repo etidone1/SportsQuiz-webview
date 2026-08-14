@@ -1,10 +1,221 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Sports Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Sports Quiz - Think You Know Sports?</title>
+
+    <meta name="description"
+          content="Sports Quiz - Test your sports knowledge, challenge yourself, beat your high score and become a sports master.">
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: linear-gradient(135deg, #071a2f, #0d3b66);
+            color: white;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            padding: 30px 20px;
+            text-align: center;
+        }
+
+        .trophy {
+            font-size: 70px;
+            margin-bottom: 15px;
+        }
+
+        h1 {
+            font-size: clamp(42px, 9vw, 78px);
+            font-weight: 900;
+            letter-spacing: 2px;
+            margin-bottom: 10px;
+        }
+
+        .tagline {
+            font-size: clamp(20px, 4vw, 30px);
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .intro {
+            max-width: 650px;
+            margin: 0 auto 35px;
+            font-size: 18px;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+
+        .download-btn {
+            display: inline-block;
+            padding: 18px 35px;
+            background: #ffb703;
+            color: #071a2f;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: 900;
+            border-radius: 50px;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .download-btn:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px rgba(0,0,0,0.4);
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 18px;
+            max-width: 650px;
+            margin: 45px auto;
+        }
+
+        .feature {
+            background: rgba(255,255,255,0.08);
+            border: 1px solid rgba(255,255,255,0.12);
+            border-radius: 18px;
+            padding: 25px 15px;
+        }
+
+        .feature-icon {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .feature h2 {
+            font-size: 18px;
+            margin-bottom: 7px;
+        }
+
+        .feature p {
+            font-size: 14px;
+            opacity: 0.75;
+        }
+
+        .challenge {
+            margin: 25px auto;
+            padding: 25px;
+            max-width: 650px;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.06);
+        }
+
+        .challenge h2 {
+            font-size: 25px;
+            margin-bottom: 10px;
+        }
+
+        .challenge p {
+            opacity: 0.85;
+            line-height: 1.6;
+        }
+
+        footer {
+            margin-top: 45px;
+            font-size: 13px;
+            opacity: 0.55;
+        }
+
+        @media (max-width: 600px) {
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .download-btn {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
 </head>
+
 <body>
-    <h1>Sports Quiz</h1>
-    <p>Official Sports Quiz app website.</p>
+
+<div class="container">
+
+    <div class="trophy">🏆</div>
+
+    <h1>SPORTS QUIZ</h1>
+
+    <div class="tagline">
+        Think You Know Sports? Prove It!
+    </div>
+
+    <p class="intro">
+        Test your sports knowledge, challenge yourself with exciting questions,
+        beat your high score and discover how much of a sports master you really are.
+    </p>
+
+    <a class="download-btn"
+       href="https://www.amazon.com/gp/mas/dl/android?p=com.agnesstudio.sportsquiz"
+       target="_blank"
+       rel="noopener">
+        🔥 DOWNLOAD SPORTS QUIZ
+    </a>
+
+    <div class="features">
+
+        <div class="feature">
+            <div class="feature-icon">🧠</div>
+            <h2>Test Your Knowledge</h2>
+            <p>Challenge yourself with exciting sports questions.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🎯</div>
+            <h2>Beat Your Score</h2>
+            <p>Keep playing and push your personal best.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🏆</div>
+            <h2>Become a Sports Master</h2>
+            <p>Prove that you really know your sports.</p>
+        </div>
+
+        <div class="feature">
+            <div class="feature-icon">🎁</div>
+            <h2>Special Rewards</h2>
+            <p>Unlock exciting extras while you play.</p>
+        </div>
+
+    </div>
+
+    <div class="challenge">
+        <h2>🔥 Ready for the Challenge?</h2>
+        <p>
+            Don't just watch sports. Put your knowledge to the test.
+            Download Sports Quiz and see how high you can score!
+        </p>
+    </div>
+
+    <a class="download-btn"
+       href="https://www.amazon.com/gp/mas/dl/android?p=com.agnesstudio.sportsquiz"
+       target="_blank"
+       rel="noopener">
+        🏆 PLAY SPORTS QUIZ
+    </a>
+
+    <footer>
+        © 2026 Sports Quiz · Official Sports Quiz Website
+    </footer>
+
+</div>
+
 </body>
 </html>
